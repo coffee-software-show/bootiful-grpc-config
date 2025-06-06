@@ -1,8 +1,8 @@
 server:
-  servlet: 
-    session: 
-      cookie: 
-        name: AUTHSERVER_SESSION
+  # servlet: 
+    # session: 
+      # cookie: 
+        # name: AUTHSERVER_SESSION
   port: 9090
 spring:
   security:
@@ -17,7 +17,7 @@ spring:
                 - "client_secret_basic"
               authorization-grant-types:
                 - "authorization_code"
-                - "client_credentials"
+                # - "client_credentials"
                 - "refresh_token"
               redirect-uris:
                 - "http://127.0.0.1:8081/login/oauth2/code/spring"
